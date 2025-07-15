@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// Import the NavbarLinks component
+import NavbarLinks from "./NavbarLinks";
 
 // PUBLIC_INTERFACE
 function App() {
@@ -26,6 +28,8 @@ function App() {
         >
           {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
         </button>
+        {/* NavbarLinks with placeholder links, positioned above logo per modern navbar pattern */}
+        <NavbarLinks />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
