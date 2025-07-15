@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// Import the NavbarLinks component
 import NavbarLinks from "./NavbarLinks";
+import Section from "./Section";
 
 // PUBLIC_INTERFACE
 function App() {
@@ -28,8 +28,11 @@ function App() {
         >
           {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
         </button>
-        {/* NavbarLinks with placeholder links, positioned above logo per modern navbar pattern */}
+        {/* NavbarLinks at the top */}
         <NavbarLinks />
+        {/* Section from Figma just below NavbarLinks; shows placeholder children if not real */}
+        <Section />
+        {/* App logo etc. temporarily below Section for illustration */}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

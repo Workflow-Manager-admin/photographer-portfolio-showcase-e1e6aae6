@@ -1,26 +1,39 @@
 import React from "react";
 import "./Section.css";
-import SectionActions from "./SectionActions";
-import NavbarLinks from "./NavbarLinks";
 
 /**
  * PUBLIC_INTERFACE
  * Section component - Matches Figma node 1:109/1:110 vertically-centered content panel,
- * with NavbarLinks above, true paddings, spacing, and Actions bar below children.
- *
- * @param {React.ReactNode} children - Any content passed into the Section (e.g., title, text, image, etc.)
+ * with Figma paddings and two clear placeholder children ("1:110", "1:115").
+ * When no real children are available, visually placeholders are shown and labeled.
  */
-const Section = ({ children }) => (
-  <div className="navbar-wrapper">
-    {/* NavbarLinks (Figma "Navbar Links") always above */}
-    <NavbarLinks />
-    <section className="section-container">
-      {/* Main Section content (centered, padded, stylable slot) */}
-      {children}
-      {/* Actions sub-section below content as per Figma */}
-      <SectionActions />
+const Section = () => {
+  return (
+    <section className="Section" data-testid="figma-section">
+      {/* TODO: Real Figma children go here when available */}
+      <div style={{
+        width: "100%",
+        height: "50%",
+        background: "#eee",
+        marginBottom: "16px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
+        Placeholder for Figma Child 1 ("1:110")
+      </div>
+      <div style={{
+        width: "100%",
+        height: "50%",
+        background: "#ddd",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
+        Placeholder for Figma Child 2 ("1:115")
+      </div>
     </section>
-  </div>
-);
+  );
+};
 
 export default Section;

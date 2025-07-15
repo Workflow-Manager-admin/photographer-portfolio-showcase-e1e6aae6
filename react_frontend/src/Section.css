@@ -1,77 +1,12 @@
-.navbar-wrapper {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Section (Figma 1:109, Container Center 1:110) */
-.section-container {
-  width: 600px;
-  min-height: 156px;
+.Section {
   box-sizing: border-box;
+  width: 720px;
+  height: 311px;
+  padding: 56px 60px;
+  background: transparent;
   display: flex;
   flex-direction: column;
-  align-items: center;  /* counter-axis: center */
-  justify-content: center;  /* primary-axis: center */
-  padding: 56px 60px;
-  gap: 5px; /* outer vertical spacing between children? Normally for itemSpacing, but not clear here so using 5px */
-  background: transparent;
-}
-
-/* --- Actions (Figma 1:115) --- */
-.section-actions {
-  width: 60px;
-  min-width: 60px;
-  height: 43px;
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* cross-axis: center */
-  gap: 8px;
-  padding-top: 24px;
-  background: transparent;
-}
-
-/* Style for action button aligned with "Contact us" Figma styling. */
-.action-btn {
-  flex: 1 1 0;
-  border: none;
-  background: #fff;
-  border-radius: 2px;
-  width: 60px;
-  height: 19px;
-  font-size: 10px;
-  font-family: 'Inter', Arial, sans-serif;
-  font-weight: 400;
-  color: #E14208; /* matches accent used in "Contact us" text */
-  box-shadow: 0 0.5px 1.5px rgba(0,0,0,0.03); /* Optional for subtle elevation */
-  cursor: pointer;
-  border: 0.5px solid #E14208;
-  letter-spacing: 0.01em;
-  transition: background 0.2s, color 0.2s, border 0.2s;
-  padding: 4px 8px 5px 8px; /* Figma button: top: 4, right: 8, bottom: 5, left: 8 */
-}
-.action-btn:hover, .action-btn:focus {
-  background: #f9ebea;
-  color: #bf2c05;
-  border-color: #bf2c05;
-}
-
-/* NavbarLinks re-inline (overridable) */
-.navbar-links {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 10px;
-  width: 162px;
-  height: 10px;
-  background: transparent;
-}
-
-.navbar-link {
-  color: #E14208;
-  text-decoration: none;
-  font-size: 10px;
-  font-family: 'Inter', Arial, sans-serif;
-  font-weight: 400;
+  /* If you want it to be centered horizontally in the page: */
+  margin: 0 auto;
 }
