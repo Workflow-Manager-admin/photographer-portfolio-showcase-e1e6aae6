@@ -1,24 +1,17 @@
 import React from "react";
-import "./NavbarLinks.css";
+import "./Section.css";
 
 /**
  * PUBLIC_INTERFACE
- * NavbarLinks - A horizontal flex navbar matching the specified Figma frame properties.
- * 
- * Four placeholder link elements: "Link 1" to "Link 4".
- * 
- * Width: 162px; Height: 10px; Gap between items: 10px. 
- * No background.
- *
- * TODO: Replace placeholder labels and/or styles with actual link text and styling when Figma/text details become available.
+ * NavbarLinks for use above Section, Figma-based
+ * Shows: Projects | Portraits | Fashion | Fine Art
  */
 const NavbarLinks = () => (
   <nav className="navbar-links">
-    {/* TODO: Update these link labels and styles when real link info is available */}
-    <a href="#" className="navbar-link">Link 1</a>
-    <a href="#" className="navbar-link">Link 2</a>
-    <a href="#" className="navbar-link">Link 3</a>
-    <a href="#" className="navbar-link">Link 4</a>
+    <a href="#" className="navbar-link">Projects</a>
+    <a href="#" className="navbar-link">Portraits</a>
+    <a href="#" className="navbar-link">Fashion</a>
+    <a href="#" className="navbar-link">Fine Art</a>
   </nav>
 );
 
